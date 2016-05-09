@@ -1,3 +1,4 @@
+## pysam.bcftools fails with pytest
 ```
 virtualenv venv
 . venv/bin/activate
@@ -95,7 +96,7 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 ../bcftoolstest/lib/python2.7/site-packages/_pytest/capture.py:302: in readouterr
     return (self.out.snap() if self.out is not None else "",
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-```
+
 
 self = <FDCapture 1 oldfd=5>
 
