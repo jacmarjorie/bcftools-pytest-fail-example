@@ -14,7 +14,7 @@ test_data = ["1", "10177", "rs367896724", "A", "AC", "100", "PASS",
 "GT", "1|0", "0|0"]
 
 
-class TestVCFImporter(TestCase):
+class TestBCF(TestCase):
   
   @classmethod
   def setUpClass(self):
@@ -27,7 +27,7 @@ class TestVCFImporter(TestCase):
   def set_tmpdir(self, tmpdir):
     self.tmpdir = tmpdir
 
-  def test_end2endVCF(self):
+  def test_bcf(self):
     """
     set vcf sampleIdNormal, sampleIdTumor with no tags
     """
