@@ -41,6 +41,6 @@ class TestBCF(TestCase):
       inVCF.write("{0}\n".format("\t".join(test1_header)))
       inVCF.write("{0}\n".format("\t".join(test_data)))
 
-    out1 = pysam.bcftools.norm("-m", "+any", "-O", "z", "-o", str(vcfile)+".sorted.vcf.gz", str(vcfile))
+    out1 = pysam.bcftools.norm("-m", "+any", "-O", "z", "-o", str(vcfile)+".sorted.vcf.gz", str(vcfile), catch_stdout=False)
   # out2 = bcftools.index(sorted_file, "-t", "-f")
-    assert out1 == ''
+    assert out1 == None
